@@ -1,0 +1,175 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: hsl(257, 40%, 49%) no-repeat url("../images/bg-desktop.svg");
+  background-size: cover;
+  font-family: "Open Sans", sans-serif;
+  display: grid;
+  place-content: center;
+}
+
+h1,
+a {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 53px 63px;
+}
+header img {
+  width: 215px;
+}
+
+.hero {
+  padding: 28px 60px 0 65px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.hero_content {
+  padding: 0 23px;
+  color: hsl(0, 0%, 100%);
+}
+.hero_content h1 {
+  margin: 45px 0 20px;
+  font-size: 40px;
+}
+.hero_content p {
+  margin: 10px 0;
+  font-size: 18px;
+  line-height: 1.4;
+}
+.hero .register_link {
+  display: block;
+  width: 200px;
+  background: hsl(0, 0%, 100%);
+  color: hsl(257, 40%, 49%);
+  margin: 26px 0 0;
+  padding: 15.5px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 28px;
+  box-shadow: 0 0 50px #333;
+  transition: background 0.5s, color 0.5s;
+}
+.hero .register_link:hover {
+  background: hsl(300, 69%, 71%);
+  color: hsl(0, 0%, 100%);
+}
+
+footer {
+  padding: 21px 68px 40px;
+}
+footer .socials {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15.5px;
+}
+footer .socials a {
+  width: 40px;
+  height: 40px;
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: border-color 0.5s;
+}
+footer .socials a:hover {
+  border-color: hsl(300, 69%, 71%);
+}
+footer .socials a:hover svg g {
+  fill: hsl(300, 69%, 71%);
+}
+footer .socials svg {
+  width: 18px;
+}
+footer .socials svg g {
+  transition: fill 0.5s;
+}
+
+@media (max-width: 1360px) {
+  .hero img {
+    width: 40%;
+  }
+}
+@media (max-width: 1180px) {
+  header {
+    padding: 32px 30px;
+  }
+  header img {
+    width: 128px;
+  }
+  .hero {
+    padding: 28px 30px 0 30px;
+    flex-direction: column;
+  }
+  .hero img {
+    width: 400px;
+    margin: auto;
+  }
+  .hero_content {
+    padding: 10px;
+    text-align: center;
+  }
+  .hero_content h1 {
+    font-size: 35px;
+  }
+  .hero_content .register_link {
+    margin: 26px auto;
+  }
+  footer {
+    padding: 42px 0 15px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    background-image: url("../images/bg-mobile.svg");
+    background-size: contain;
+  }
+  .hero {
+    padding: 22px 30px;
+  }
+  .hero img {
+    width: 99%;
+  }
+  .hero_content {
+    padding: 0;
+  }
+  .hero_content h1 {
+    font-size: 24px;
+    margin: 30px 0 13px;
+  }
+  .hero_content p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .hero_content .register_link {
+    margin: 24px auto 0;
+    padding: 11px;
+    font-size: 12px;
+  }
+  footer .socials {
+    gap: 10px;
+  }
+  footer .socials a {
+    width: 28px;
+    height: 28px;
+  }
+  footer .socials svg {
+    width: 14px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
